@@ -1,6 +1,6 @@
-package webs.goods.service;
+package webs.service;
 
-import webs.goods.pojo.Goods;
+import webs.pojo.Goods;
 
 
 import java.util.List;
@@ -11,11 +11,9 @@ import java.util.List;
 * @createDate 2024-08-16 14:20:41
 */
 public interface GoodsService{
-     void add();
-     void delete();
-     List<Goods> list();
-
      void add(Goods goods);
 
      void delete(Integer id);
+     List<Goods> list();
+
 }

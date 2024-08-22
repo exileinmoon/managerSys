@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="webs.mapper.MarketingMapper">
+
+    <resultMap id="BaseResultMap" type="webs.pojo.Marketing">
+            <result property="information" column="information" jdbcType="VARCHAR"/>
+            <result property="markingId" column="marking_id" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        information,marketing_id
+    </sql>
+</mapper>

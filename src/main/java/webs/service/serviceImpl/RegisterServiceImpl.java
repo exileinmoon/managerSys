@@ -1,10 +1,11 @@
-package webs.register.service.impl;
+package webs.service.serviceImpl;
 
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
-import webs.register.service.RegisterService;
-import webs.register.pojo.Register;
-import webs.register.mapper.RegisterMapper;
 import org.springframework.stereotype.Service;
+import webs.mapper.RegisterMapper;
+import webs.pojo.Register;
+import webs.service.RegisterService;
 
 /**
 * @author 李
@@ -12,7 +13,8 @@ import org.springframework.stereotype.Service;
 * @createDate 2024-08-16 14:21:32
 */
 @Service
-public class RegisterServiceImpl implements RegisterService {
+public class RegisterServiceImpl extends ServiceImpl<RegisterMapper, Register>
+        implements RegisterService {
     @Autowired
     private  RegisterMapper registerMapper;
     @Override

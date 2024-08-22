@@ -1,6 +1,6 @@
-package webs.register.service;
+package webs.service;
 
-import webs.register.pojo.Register;
+import webs.pojo.Register;
 
 
 /**

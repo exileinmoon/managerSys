@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="webs.mapper.MemberMapper">
+
+    <resultMap id="BaseResultMap" type="webs.pojo.Member">
+            <id property="memberId" column="member_id" jdbcType="INTEGER"/>
+            <result property="memberName" column="member_name" jdbcType="VARCHAR"/>
+            <result property="memberTime" column="member_time" jdbcType="VARCHAR"/>
+            <result property="memberLevel" column="member_level" jdbcType="INTEGER"/>
+
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        member_name,member_id,member_time
+    </sql>
+</mapper>

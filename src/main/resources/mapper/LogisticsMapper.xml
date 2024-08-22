@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="webs.mapper.LogisticsMapper">
+
+    <resultMap id="BaseResultMap" type="webs.pojo.Logistics">
+        <result property="number" column="number" jdbcType="INTEGER"/>
+        <result property="state" column="state" jdbcType="VARCHAR"/>
+        <result property="phoneNumber" column="phone_number" jdbcType="INTEGER"/>
+        <result property="company" column="company" jdbcType="VARCHAR"/>
+        <result property="name" column="name" jdbcType="INTEGER"/>
+        <result property="logisticsId" column="logistics_id" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        number, state, phone_number, company, name
+    </sql>
+</mapper>

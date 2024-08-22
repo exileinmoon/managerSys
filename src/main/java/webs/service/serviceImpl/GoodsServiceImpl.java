@@ -1,8 +1,8 @@
-package webs.goods.service.impl;
+package webs.service.serviceImpl;
 
-import webs.goods.pojo.Goods;
-import webs.goods.service.GoodsService;
-import webs.goods.mapper.GoodsMapper;
+import webs.pojo.Goods;
+import webs.service.GoodsService;
+import webs.mapper.GoodsMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -26,16 +26,6 @@ public  class GoodsServiceImpl implements GoodsService {
     @Override
     public void delete(Integer id){
         goodsMapper.delete(id);
-    }
-
-    @Override
-    public void add() {
-
-    }
-
-    @Override
-    public void delete() {
-
     }
 
     @Override

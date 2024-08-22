@@ -1,11 +1,10 @@
 package webs.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
-import webs.register.service.RegisterService;
+import webs.service.RegisterService;
 import webs.pojo.Result;
-import webs.register.pojo.Register;
+import webs.pojo.Register;
 
 @RestController
 @RequestMapping("/register")
