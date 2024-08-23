@@ -20,13 +20,13 @@ public class Logistics implements Serializable {
     private Integer logisticsId;
     @TableField(value = "number")
     private Integer number;
-    @TableField(value = "state")
-    private String state;
+    @TableField(value = "status")
+    private String status;
     @TableField(value = "phone_number")
     private Integer phoneNumber;
     @TableField(value = "company")
     private String company;
     @TableField(value = "name")
-    private Integer name;
+    private String name;
     private static final long serialVersionUID = 1L;
 }

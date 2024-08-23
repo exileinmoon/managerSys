@@ -26,7 +26,6 @@ public class LogisticsServiceImpl extends ServiceImpl<LogisticsMapper, Logistics
         int n=random.nextInt(1000000000)+1;
         logistics.setLogisticsId(n);
         logisticsMapper.insert(logistics);
-        logisticsMapper.insert(logistics);
     }
     @Override
     public void delete(Integer id){

@@ -6,10 +6,10 @@
 
     <resultMap id="BaseResultMap" type="webs.pojo.Logistics">
         <result property="number" column="number" jdbcType="INTEGER"/>
-        <result property="state" column="state" jdbcType="VARCHAR"/>
+        <result property="state" column="status" jdbcType="VARCHAR"/>
         <result property="phoneNumber" column="phone_number" jdbcType="INTEGER"/>
         <result property="company" column="company" jdbcType="VARCHAR"/>
-        <result property="name" column="name" jdbcType="INTEGER"/>
+        <result property="name" column="name" jdbcType="VARCHAR"/>
         <result property="logisticsId" column="logistics_id" jdbcType="INTEGER"/>
     </resultMap>
 
